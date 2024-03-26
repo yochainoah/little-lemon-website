@@ -73,6 +73,7 @@
   position: absolute;
   left: 834px;
   top: 212px;
+  object-fit: cover;
 }
 .name-description-1 {
   margin-left: 275px;

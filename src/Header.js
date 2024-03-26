@@ -1,6 +1,4 @@
-
 import Nav from './Nav'
-
 
 function Header(logo) {
     return (
