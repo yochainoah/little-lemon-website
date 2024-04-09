@@ -3,7 +3,6 @@
   display:flex;
   justify-content: center;
   height: 106px;
-  
 }
 .topnav a {
   font-family: 'Karla';
@@ -17,7 +16,6 @@
   margin-bottom: auto;
 }
 .topnav .logo{
-  /*justify-content: flex-end;*/
   margin-top: auto;
   margin-bottom:auto;
   width: 239px;
@@ -121,8 +119,6 @@
 .header-btn h3{
   font-size: 40px;
   font-family: 'Markazi Text';
-  
-
 }
 .header-btn button{
   background-color: #F4CE14;
@@ -140,11 +136,8 @@
 }
 .specials{
   display: flex;
-  /*align-items: center;*/
-  /*justify-content: center;*/
   gap: 100px;
   margin-left: 275px;
-  /*margin-top: 0;*/
 }
 #dish-card {
   width:280px;
@@ -287,4 +280,119 @@
   left: 948px;
   top: 1970px;
   border-radius: 16px;
+}
+/* css for bookingForm */
+.form-section{
+  display:flex;
+  flex-direction: column;
+}
+.reservation-form{
+  display:flex;
+  margin-left: 275px;
+  flex-direction: column;
+  
+}
+/* css for booking page */
+.booking-page{
+  background-color: #495E57;
+  display:flex;
+  height: 900px;
+  gap: 30px;
+}
+#reserve-btn{
+  height: 40px;
+  width: 250px; 
+  background-color: #F4CE14;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Karla','Amiri';
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  
+}
+#booking-header{
+  font-family: 'Markazi Text';
+  font-size: 54px;
+  margin: 0 275px;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+#res-date,#res-time,#guests,#occasion{
+  width: 200px;
+  height:32px;
+  border-radius: 8px;
+  border: none;
+}
+/* booking slot css */
+.time_table{
+  display:flex;
+  flex-direction: column;
+  width:200px;
+  height:400px;
+  overflow-y: auto;
+  border-radius: 8px; 
+  box-sizing: border-box;
+}
+/* Style the scrollbar track (background) */
+.time_table::-webkit-scrollbar-track {
+  background-color: transparent; /* Make track background transparent */
+}
+
+/* Style the scrollbar thumb (the part that you drag) */
+.time_table::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black */
+  border-radius: 8px; /* Match the border-radius of the container */
+}
+
+/* Set the width of the scrollbar */
+.time_table::-webkit-scrollbar {
+  width: 8px;
+}
+
+.time_slot{
+  border-bottom: 2px solid #495E57;
+  margin: 0;
+  height:40px;
+}
+.time_table_section h2{
+  font-family: 'Markazi Text','sans-serif';
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.time_table_section{
+  margin-top: 80px;
+}
+/* new */
+input, select {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+}
+small {
+  display: block;
+  margin-top: 4px;
+}
+.reservation-form .input-container {
+  margin-bottom: 24px;
+}
+.reservation-form .input-container label{
+  font-family: 'Karla','Amiri';
+  font-size: 16px;
+  font-weight: bold;
+}
+/* confirmation-page */
+.reserve-confirmation{
+  font-family: 'Markazi Text';
+  font-weight: bold;
+  font-size: 54px;
+}
+.confirmation-page{
+  background-color: #495E57;
+  height: 900px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }

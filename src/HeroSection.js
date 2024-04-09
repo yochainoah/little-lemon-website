@@ -1,7 +1,14 @@
 import './App.css';
 import restaurantfood from "./assets/restaurantfood.jpg";
+import {useNavigate} from 'react-router-dom';
+
 
 function HeroSection(){
+
+    const navigate = useNavigate();
+    function handleClick(){
+        navigate('/booking');
+    }
     return (
         <section id = 'hero-section'>
             <article className="name-description-1">
@@ -11,7 +18,7 @@ function HeroSection(){
                 adipiscing elit,sed do eiusmod tempor incididunt ut <br />
                 labore et dolore magnaaliqua. Ut enim ad minim veniam,<br /> 
                 quis nostrud "</p>
-            <button>Reserve a Table</button>
+            <button onClick={handleClick}>Reserve a Table</button>
             </article>
             <img src={restaurantfood} className='hero-section-img' alt="dish being served"/>        
         </section>

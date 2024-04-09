@@ -1,5 +1,6 @@
 import mario_adrian_b from "./assets/Mario and Adrian b.jpg";
 import mario_adrian_a from "./assets/Mario and Adrian A.jpg";
+import './App.css';
 function About(){
     return (
         <section id = 'about'>
